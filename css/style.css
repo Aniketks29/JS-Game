@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("/images/back.jpg");
+  height: 100vh;
+  width: 100vw;
+  cursor: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+.mainpage {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  z-index: 2;
+  cursor: none;
+  align-items: center;
+  transition: all 0.1s ease;
+}
+
+.mainpage .playbtn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aquamarine;
+  font-size: 40px;
+  border: 2px solid aquamarine;
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+
+  font-family: "Lobster", cursive;
+  border-radius: 25px;
+  transition: all 0.1s ease;
+}
+
+.mainpage .playbtn:hover {
+  font-size: 50px;
+  height: 70px;
+  width: 120px;
+}
+
+.cursor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 75px;
+  width: 75px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.cursor-bang {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 75px;
+  width: 75px;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.mole {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 150px;
+  transform: translate(-50%, -50%);
+}
